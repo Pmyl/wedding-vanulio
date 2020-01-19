@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: sifonnFont;
+  src: url(assets/SIFONN_PRO.woff);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EEEEEE;
+  font-family: 'Roboto', sans-serif;
+}
