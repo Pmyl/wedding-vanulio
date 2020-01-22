@@ -92,15 +92,11 @@ $greenColor: #A4D79B;
 
     .countdown-title {
       text-align: center;
-      font-size: 2em;
+      font-size: 1.4em;
       margin-bottom: 10px;
       text-transform: uppercase;
       padding: 0 20px;
       font-style: italic;
-
-      @media only screen and (max-width: 600px) {
-        font-size: 1.4em;
-      }
     }
 
     .countdown-time {
@@ -113,12 +109,8 @@ $greenColor: #A4D79B;
       .countdown-hours,
       .countdown-minutes,
       .countdown-seconds {
-        padding: 0 50px 0 50px;
-
-        @media only screen and (max-width: 650px) {
-          padding: 0 0 20px 0;
-          flex-basis: 50%;
-        }
+        padding: 0 0 20px 0;
+        flex-basis: 50%;
 
         .countdown-digit {
           margin: 0;
@@ -130,6 +122,22 @@ $greenColor: #A4D79B;
           margin: 0;
           font-size: .8em;
           text-align: center;
+        }
+      }
+    }
+
+    @include bigger-than-mobile {
+      .countdown-title {
+        font-size: 2em;
+      }
+
+      .countdown-time {
+        .countdown-days,
+        .countdown-hours,
+        .countdown-minutes,
+        .countdown-seconds {
+          padding: 0 50px 0 50px;
+          flex-basis: auto;
         }
       }
     }
