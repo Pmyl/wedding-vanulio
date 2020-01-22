@@ -68,6 +68,10 @@ $greenColor: #A4D79B;
           display: flex;
           align-items: center;
           justify-content: center;
+
+          .married-polaroid-frame-image {
+            height: 260px;
+          }
         }
 
         .married-polaroid-save-date {
@@ -222,9 +226,5 @@ $greenColor: #A4D79B;
         margin-top: 60px;
       }
     }
-  }
-
-  img {
-    height: 180px;
   }
 }
