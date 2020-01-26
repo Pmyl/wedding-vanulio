@@ -1,4 +1,9 @@
 $greenColor: #A4D79B;
+$greenColorTransparent: rgb(164, 215, 155, .5);
+
+@mixin banner-bg {
+  background-image: linear-gradient(to right, $greenColorTransparent, $greenColor, $greenColorTransparent);
+}
 
 @mixin bigger-than-mobile {
   @media only screen and (min-width: 649px) {
@@ -44,7 +49,7 @@ $greenColor: #A4D79B;
       position: relative;
 
       .married-polaroid-banner {
-        background-color: $greenColor;
+        @include banner-bg;
         width: 100%;
         height: 80%;
         position: absolute;
@@ -148,11 +153,11 @@ $greenColor: #A4D79B;
   }
 
   .section-divider {
+    @include banner-bg;
     border: none;
     margin: 45px 0;
     height: 80px;
     width: 100%;
-    background-color: $greenColor;
   }
 
   .info {
