@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --prod --localize",
+    "build:prod": "ng build --prod --localize && node ./config/repair-index.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -17,7 +17,7 @@
     "@angular/compiler": "~9.0.0-rc.9",
     "@angular/core": "~9.0.0-rc.9",
     "@angular/forms": "~9.0.0-rc.9",
-    "@angular/localize": "^9.0.0-rc.0",
+    "@angular/localize": "^9.0.0-rc.9",
     "@angular/platform-browser": "~9.0.0-rc.9",
     "@angular/platform-browser-dynamic": "~9.0.0-rc.9",
     "@angular/router": "~9.0.0-rc.9",

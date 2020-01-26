@@ -14,9 +14,9 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
-        "sourceLocale": "en-GB",
+        "sourceLocale": "en",
         "locales": {
-          "it-IT": "src/locale/messages.it-IT.xlf"
+          "it": "src/locale/messages.it.xlf"
         }
       },
       "architect": {
@@ -67,8 +67,8 @@
                 }
               ]
             },
-            "it-IT": {
-              "localize": ["it-IT"]
+            "it": {
+              "localize": ["it"]
             }
           }
         },
@@ -81,8 +81,8 @@
             "production": {
               "browserTarget": "wedding-vanulio:build:production"
             },
-            "it-IT": {
-              "browserTarget": "wedding-vanulio:build:it-IT"
+            "it": {
+              "browserTarget": "wedding-vanulio:build:it"
             }
           }
         },
