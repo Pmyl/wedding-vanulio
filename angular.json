@@ -13,6 +13,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-GB",
+        "locales": {
+          "it-IT": "src/locale/messages.it-IT.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -60,6 +66,9 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "it-IT": {
+              "localize": ["it-IT"]
             }
           }
         },
@@ -71,6 +80,9 @@
           "configurations": {
             "production": {
               "browserTarget": "wedding-vanulio:build:production"
+            },
+            "it-IT": {
+              "browserTarget": "wedding-vanulio:build:it-IT"
             }
           }
         },
