@@ -288,6 +288,11 @@ $greenColorTransparent: rgb(164, 215, 155, .5);
     box-sizing: border-box;
     width: 100%;
 
+    .accommodation-header {
+      margin-top: 0;
+      text-align: center;
+    }
+
     .accommodation-routes-container {
       display: flex;
       flex-wrap: wrap;
