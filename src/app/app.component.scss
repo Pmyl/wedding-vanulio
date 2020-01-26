@@ -227,10 +227,12 @@ $textColor: #464646;
         justify-content: space-between;
 
         .info-details-event {
-          margin-left: 20px;
-
           &:not(:last-of-type) {
             padding-right: 20px;
+          }
+
+          &:not(:first-of-type) {
+            margin-left: 20px;
           }
 
           .info-details-event-img {
