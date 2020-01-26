@@ -12,3 +12,11 @@ body {
   overflow-x: hidden;
   overscroll-behavior: none;
 }
+
+.link {
+  color: inherit;
+
+  &:hover {
+    color: darkblue;
+  }
+}
