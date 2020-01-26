@@ -49,7 +49,7 @@ $greenColorTransparent: rgb(164, 215, 155, .5);
       position: relative;
 
       .married-polaroid-banner {
-        @include banner-bg;
+        background-color: $greenColor;
         width: 100%;
         height: 80%;
         position: absolute;
@@ -92,6 +92,13 @@ $greenColorTransparent: rgb(164, 215, 155, .5);
           font-size: 28px;
           font-weight: bold;
         }
+      }
+    }
+
+    @include bigger-than-mobile {
+      .married-polaroid-container .married-polaroid-banner {
+        @include banner-bg;
+        background-color: transparent;
       }
     }
   }
@@ -153,11 +160,16 @@ $greenColorTransparent: rgb(164, 215, 155, .5);
   }
 
   .section-divider {
-    @include banner-bg;
+    background-color: $greenColor;
     border: none;
     margin: 45px 0;
     height: 80px;
     width: 100%;
+
+    @include bigger-than-mobile {
+      @include banner-bg;
+      background-color: transparent;
+    }
   }
 
   .info {
