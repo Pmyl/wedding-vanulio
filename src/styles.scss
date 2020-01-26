@@ -19,3 +19,11 @@ body {
     color: darkblue;
   }
 }
+
+.text-dirt {
+  user-select: none;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  display: inline-block;
+}
