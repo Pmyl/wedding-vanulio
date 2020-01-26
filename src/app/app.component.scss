@@ -1,5 +1,6 @@
 $greenColor: #A4D79B;
 $greenColorTransparent: rgb(164, 215, 155, .5);
+$textColor: #464646;
 
 @mixin banner-bg {
   background-image: linear-gradient(to right, $greenColorTransparent, $greenColor, $greenColorTransparent);
@@ -21,7 +22,7 @@ $greenColorTransparent: rgb(164, 215, 155, .5);
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #464646;
+  color: $textColor;
 
   .married {
     width: 100%;
@@ -288,9 +289,33 @@ $greenColorTransparent: rgb(164, 215, 155, .5);
     box-sizing: border-box;
     width: 100%;
 
-    .accommodation-header {
+    .accommodation-header-get {
       margin-top: 0;
       text-align: center;
+      font-size: 2em;
+    }
+
+    .accommodation-place-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .accommodation-place-img-container {
+        img {
+          width: auto;
+          height: 400px;
+        }
+      }
+
+      .accommodation-place-description {
+        margin-top: 20px;
+      }
+    }
+
+    .accommodation-header-italy {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 2em;
     }
 
     .accommodation-routes-container {
@@ -347,6 +372,13 @@ $greenColorTransparent: rgb(164, 215, 155, .5);
 
     .accommodation-stay {
       margin-top: 20px;
+
+      .accommodation-stay-separator {
+        border-top: 1px solid $textColor;
+        border-bottom: 0;
+        width: 50%;
+        margin-bottom: 15px;
+      }
     }
 
     @include bigger-than-mobile {
@@ -366,6 +398,16 @@ $greenColorTransparent: rgb(164, 215, 155, .5);
     }
 
     @include bigger-than-tablet {
+      .accommodation-place-container {
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 0 15%;
+
+        .accommodation-place-description {
+          padding: 0 50px;
+        }
+      }
+
       .accommodation-routes-container {
         flex-wrap: nowrap;
 
@@ -400,6 +442,14 @@ $greenColorTransparent: rgb(164, 215, 155, .5);
           order: 3;
           margin: 0 10px;
         }
+      }
+
+      .accommodation-stay {
+        .accommodation-stay-separator {
+          display: none;
+        }
+
+        margin: 20px 40px 0;
       }
     }
   }
