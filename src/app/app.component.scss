@@ -276,4 +276,96 @@ $greenColorTransparent: rgb(164, 215, 155, .5);
       }
     }
   }
+
+  .accommodation {
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;
+
+    .accommodation-routes-container {
+      display: flex;
+      flex-wrap: wrap;
+
+      .accommodation-left-img,
+      .accommodation-right-img {
+        height: 100%;
+        width: auto;
+        margin: 0 -20px;
+      }
+
+      .accommodation-left-img {
+        img {
+          transform: translateX(-50%);
+        }
+
+        overflow-x: hidden;
+        flex: 1;
+      }
+
+      .accommodation-right-img {
+        flex-basis: 50%;
+        text-align: right;
+      }
+
+      .accommodation-ema-route {
+        margin-top: 10px;
+      }
+
+      .accommodation-london-route {
+        margin-top: 20px;
+      }
+
+      .accommodation-ema-route,
+      .accommodation-london-route {
+        box-sizing: border-box;
+        flex: 1 0 100%;
+      }
+
+      .accommodation-ema-route-intro,
+      .accommodation-london-route-intro {
+        text-align: center;
+        margin: 0;
+      }
+
+      .accommodation-ema-route-details,
+      .accommodation-london-route-details {
+        margin: 5px 0 0;
+      }
+    }
+
+    @include bigger-than-mobile {
+      .accommodation-routes-container {
+        flex-wrap: nowrap;
+
+        .accommodation-left-img {
+          flex: 1 1 auto;
+          order: 1;
+          overflow-x: visible;
+          margin: 0 0 0 -20px;
+
+          img {
+            transform: none;
+          }
+        }
+
+        .accommodation-right-img {
+          flex: 1 1 auto;
+          order: 4;
+          margin: 0;
+        }
+
+        .accommodation-ema-route {
+          flex: 1 1 auto;
+          order: 2;
+          margin: 0;
+        }
+
+        .accommodation-london-route {
+          flex: 1 1 auto;
+          order: 3;
+          margin: 0;
+        }
+      }
+    }
+  }
 }
