@@ -14,9 +14,15 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
-        "sourceLocale": "en",
+        "sourceLocale": {
+          "code": "en",
+          "baseHref": "./"
+        },
         "locales": {
-          "it": "src/locale/messages.it.xlf"
+          "it": {
+            "translation": "src/locale/messages.it.xlf",
+            "baseHref": "./"
+          }
         }
       },
       "architect": {
@@ -30,7 +36,6 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
-              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
@@ -66,9 +71,6 @@
                   "maximumError": "10kb"
                 }
               ]
-            },
-            "it": {
-              "localize": ["it"]
             }
           }
         },
