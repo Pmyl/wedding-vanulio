@@ -2,7 +2,221 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="accomodationStay" datatype="html">
+      <trans-unit id="marriedSubtitle" datatype="html">
+        <source>are getting married!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="saveTheDate" datatype="html">
+        <source>save the date</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="countdown" datatype="html">
+        <source>Countdown to the big day</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="days" datatype="html">
+        <source>days</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hours" datatype="html">
+        <source>hours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="minutes" datatype="html">
+        <source>minutes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seconds" datatype="html">
+        <source>seconds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="infoWhen" datatype="html">
+        <source>On Tuesday 1st September 2020</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="infoWherePre" datatype="html">
+        <source>we&apos;ll celebrate our wedding event at</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="infoWhere" datatype="html">
+        <source>The Riverside Gallery</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="infoWhereAddress" datatype="html">
+        <source>
+        Brewhouse and Kitchen<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        Trent Bridge<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        Nottingham<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+        NG2 2GS
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="infoCeremony" datatype="html">
+        <source>Ceremony</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="infoCeremonyDescription" datatype="html">
+        <source>are we seriously getting married?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="infoReception" datatype="html">
+        <source>Reception</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="infoReceptionDescription" datatype="html">
+        <source>...OMG I was starving</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="infoParty" datatype="html">
+        <source>Party!!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="infoPartyDescription" datatype="html">
+        <source>dancing and play time!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="howToGetThere" datatype="html">
+        <source>How to get there</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accommodationDescription" datatype="html">
+        <source>
+      <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>The Riverside Gallery<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> is located in an English style pub
+      right on the River Trent. The place is surrounded by
+      beautiful gardens and the majestic bridge on the river.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>From the city center, the venue is very easy to reach:
+      you can plan ahead and decide for a nice walk from your place
+      it’s a 15 minute walk from Jury’s Inn or 25 minute walk from Old Market Square (the main
+      square).
+      But if your shoes are not comfy enought
+      for a small walk you can grab a bus from almost everywhere.
+      The venue it’s in a strategic place, we’ve thought of everything!!
+      <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+      ...if you are lazy like me and you want to go for a taxi
+      I’m not here to judge you.
+      <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+      <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+      By the way if you are planning to get there by car remember
+      to check it in inside the pub: you’ll need to insert your plate number in their device and there you have it!
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accommodationFromItaly" datatype="html">
+        <source>From Italy? We can help!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nottinghamRoute" datatype="html">
+        <source>If you can come on a Wednesday or Sunday...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">109</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nottinghamRouteDescription" datatype="html">
+        <source>
+        The closest airport to Nottingham is East Midlands Airport
+        and you can flight from Pisa on Wednesday and Sunday with Ryanair. The shortest trip
+        would be coming here on the 30th of August and go back home on the 2nd of September.
+        Then you can take a bus from the airport
+        and in 45 minutes you&apos;ll be in the city centre (<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>bus Skylink<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>).
+        There are different options for your ticket like single, double or family,
+        pay attention so you’ll not miss a friendly discount.
+        On average the prices are around £5 pp, if you don&apos;t book it in advance through the Ryanair website
+        <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>be sure to have some change with you.<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
+        <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>If you are looking to share a ride with
+        someone will be favourable to take an <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>Uber<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> or call for a taxi from the airport
+        desk (you&apos;ll see the indication when you land, don&apos;t worry).
+        The prices are around 20/30£ per ride to the
+        city centre and it will take less then 30 minutes.
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="londonRoute" datatype="html">
+        <source>...in alternative you can also visit London</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="londonRouteDescription" datatype="html">
+        <source>
+        You can flight to London almost every day of the week from
+        Pisa/Bologna but you can also look for some direct flight from
+        Florence. Then, you can choose to stay for some days in the
+        Capital and enjoy or go and reach Nottingham. You can take a <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>bus with National Express<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        (4 hours ride for £25pp) or a <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>train with Trainline<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> (2 hours
+        ride for £65 pp). Try to book in advance from their website just
+        to be sound and safe. When you grab the bus/train you&apos;ll reach
+        the city centre with no fuss. Be sure to carry with you a nice book or music.
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="accommodationStay" datatype="html">
         <source>
     <x id="HORIZONTAL_RULE" ctype="x-hr" equiv-text="&lt;hr/&gt;"/>
     In Nottingham you&apos;ll find a lot of places where to stay during your holidays.
@@ -32,7 +246,14 @@
           <context context-type="linenumber">141</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="registryDescription1" datatype="html">
+      <trans-unit id="registryTitle" datatype="html">
+        <source>Registry</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registryDescription" datatype="html">
         <source>
       We don’t have a proper registry mainly because we don’t have a lot of space and we don’t
       lack home supplies! If you are willing to gift us anything we’ll let you know that we are planning a crazy honeymoon in Japan. It’s our dream holiday and we’ll be really grateful if
@@ -43,7 +264,7 @@
           <context context-type="linenumber">170</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="registryDescription2" datatype="html">
+      <trans-unit id="registryThanks" datatype="html">
         <source>
       We cannot thank you enough!!
     </source>

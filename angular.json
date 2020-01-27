@@ -71,6 +71,9 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "it": {
+              "localize": ["it"]
             }
           }
         },
