@@ -228,18 +228,7 @@
     <x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a&gt;"/>hometogo.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.
     <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Some advice: <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>try to book in the city centre (NG1) because if you are getting further then NG3
     you’ll be pretty far from the center and then you’ll need a bus or a cab to reach the main tourist
-    sites. Also the city it’s quite beautiful and I think you don’t want to miss it!! Right in the city
-    center you can find the gorgeous Old Market Square with its Neoclassical Council House, crowned
-    by an imposing dome. 5 minutes away on foot you can reach the stunning Nottingham Castle: you must take
-    a photo in front of the bronze statue of Robin Hood! The Castle affords excellent views of the town, two
-    great museum and 100-meters long cave called Mortimer&apos;s Hole (the extravagant museum guide will show you all the history
-    behind this venue). Not so far there is the popular Galleries of Justice Museum in the city&apos;s
-    former court and jailhouse. And if you want to relax, if you are lucky enough to enjoy a sunny day,
-    you can walk to the Arboretum, home to lovely gardens and some of the city&apos;s most popular festivals!
-    If you are willing to take a bus you have to visit Highfields Park (which is part of the University Campus) and
-    Wollaton Hall (a 200-hectare deer park). Also don&apos;t forget Sherwood Forest! I mean, these are the first things
-    that come to my mind, there is so much more to do. Do you really want to miss a super greasy delicious burger at
-    <x id="START_LINK_3" ctype="x-a" equiv-text="&lt;a&gt;"/>Annie&apos;s Burger Shack<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+    sites. Also the city it’s quite beautiful and I think you don’t want to miss it!! Here some <x id="START_LINK_3" ctype="x-a" equiv-text="&lt;a&gt;"/>top-rated tourist attractions<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> in Nottingham!<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
   </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
@@ -250,7 +239,7 @@
         <source>Registry</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">168</context>
+          <context context-type="linenumber">157</context>
         </context-group>
       </trans-unit>
       <trans-unit id="registryDescription" datatype="html">
@@ -261,7 +250,7 @@
     </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">170</context>
+          <context context-type="linenumber">159</context>
         </context-group>
       </trans-unit>
       <trans-unit id="registryThanks" datatype="html">
@@ -270,7 +259,7 @@
     </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
-          <context context-type="linenumber">178</context>
+          <context context-type="linenumber">167</context>
         </context-group>
       </trans-unit>
     </body>

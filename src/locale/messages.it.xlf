@@ -12,7 +12,7 @@
       </trans-unit>
       <trans-unit id="saveTheDate" datatype="html">
         <source>save the date</source>
-        <target>save the date</target>
+        <target>segnatevi la data</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">13</context>
@@ -20,7 +20,7 @@
       </trans-unit>
       <trans-unit id="countdown" datatype="html">
         <source>Countdown to the big day</source>
-        <target>Countdown to the big day</target>
+        <target>Countdown al grande giorno</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">19</context>
@@ -28,7 +28,7 @@
       </trans-unit>
       <trans-unit id="days" datatype="html">
         <source>days</source>
-        <target>days</target>
+        <target>giorni</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">23</context>
@@ -36,7 +36,7 @@
       </trans-unit>
       <trans-unit id="hours" datatype="html">
         <source>hours</source>
-        <target>hours</target>
+        <target>ore</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">27</context>
@@ -44,7 +44,7 @@
       </trans-unit>
       <trans-unit id="minutes" datatype="html">
         <source>minutes</source>
-        <target>minutes</target>
+        <target>minuti</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">31</context>
@@ -52,7 +52,7 @@
       </trans-unit>
       <trans-unit id="seconds" datatype="html">
         <source>seconds</source>
-        <target>seconds</target>
+        <target>secondi</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">35</context>
@@ -60,7 +60,7 @@
       </trans-unit>
       <trans-unit id="infoWhen" datatype="html">
         <source>On Tuesday 1st September 2020</source>
-        <target>On Tuesday 1st September 2020</target>
+        <target>Martedì 1 Settembre 2020</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">45</context>
@@ -68,7 +68,7 @@
       </trans-unit>
       <trans-unit id="infoWherePre" datatype="html">
         <source>we&apos;ll celebrate our wedding event at</source>
-        <target>we&apos;ll celebrate our wedding event at</target>
+        <target>Celebreremo il nostro matrimonio a</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">46</context>
@@ -102,7 +102,7 @@
       </trans-unit>
       <trans-unit id="infoCeremony" datatype="html">
         <source>Ceremony</source>
-        <target>Ceremony</target>
+        <target>Cerimonia</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">60</context>
@@ -110,7 +110,7 @@
       </trans-unit>
       <trans-unit id="infoCeremonyDescription" datatype="html">
         <source>are we seriously getting married?</source>
-        <target>are we seriously getting married?</target>
+        <target>davvero ci sposiamo?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">61</context>
@@ -118,7 +118,7 @@
       </trans-unit>
       <trans-unit id="infoReception" datatype="html">
         <source>Reception</source>
-        <target>Reception</target>
+        <target>Ricevimento</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">66</context>
@@ -126,7 +126,7 @@
       </trans-unit>
       <trans-unit id="infoReceptionDescription" datatype="html">
         <source>...OMG I was starving</source>
-        <target>...OMG I was starving</target>
+        <target>...Oddio stavo morendo di fame</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">67</context>
@@ -142,7 +142,7 @@
       </trans-unit>
       <trans-unit id="infoPartyDescription" datatype="html">
         <source>dancing and play time!</source>
-        <target>dancing and play time!</target>
+        <target>tempo di ballare e giocare!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">73</context>
@@ -150,7 +150,7 @@
       </trans-unit>
       <trans-unit id="howToGetThere" datatype="html">
         <source>How to get there</source>
-        <target>How to get there</target>
+        <target>Come arrivare</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">80</context>
@@ -164,34 +164,34 @@
       you can plan ahead and decide for a nice walk from your place
       it’s a 15 minute walk from Jury’s Inn or 25 minute walk from Old Market Square (the main
       square).
-      But if your shoes are not comfy enought
+      But if your shoes are not comfy enough
       for a small walk you can grab a bus from almost everywhere.
-      The venue it’s in a strategic place, we’ve thought of everything!!
+      The venue it’s in a strategic place, we’ve thought about everything!!
       <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-      ...if you are lazy like me and you want to go for a taxi
+      ...if you are lazy like us and you want to go for a taxi
       I’m not here to judge you.
       <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
       <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-      By the way if you are planning to get there by car remember
-      to check it in inside the pub: you’ll need to insert your plate number in their device and there you have it!
+      By the way if you are planning to get there by car you can park in the pub's carpark but remember
+      to do the check-in inside: you’ll need to insert your plate number in their device and there you have it!
     </source>
         <target>
-      <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>The Riverside Gallery<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> is located in an English style pub
-      right on the River Trent. The place is surrounded by
-      beautiful gardens and the majestic bridge on the river.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>From the city center, the venue is very easy to reach:
-      you can plan ahead and decide for a nice walk from your place
-      it’s a 15 minute walk from Jury’s Inn or 25 minute walk from Old Market Square (the main
-      square).
-      But if your shoes are not comfy enought
-      for a small walk you can grab a bus from almost everywhere.
-      The venue it’s in a strategic place, we’ve thought of everything!!
+      <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>The Riverside Gallery<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> è situato in un pub all'inglese
+      sul fiume Trent. Il posto è circondato da bellissimi giardini e potrete godere della vista di
+      un maestoso ponte sul fiume.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Dal centro città il locale è facile da raggiungere:
+      se pensate di venire a piedi dal posto dove alloggerete sappiate che per esempio
+      ci vogliono solo 15 minuti a piedi dall&apos; hotel Jury’s Inn o 25 minuti da Old Market Square (la piazza
+      principale).
+      Ma se le vostre scarpe non sono abbastanza comode
+      per una passeggiata potete prendere un bus da praticamente ovunque.
+      Il locale è posizionato strategicamente, abbiamo pensato a tutto!!
       <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-      ...if you are lazy like me and you want to go for a taxi
-      I’m not here to judge you.
+      ...comunque se sei pigro tanto quanto noi e vuoi prendere un taxi
+      non staremo qui a giudicarti.
       <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
       <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
-      By the way if you are planning to get there by car remember
-      to check it in inside the pub: you’ll need to insert your plate number in their device and there you have it!
+      Per non dimenticare! Se hai intenzione di arrivare in macchina puoi sostare nel parcheggio del pub ma ricordati
+      di fare il check-in all'interno: avrai bisogno di inserire la targa della vettura nel loro computer e il gioco è fatto!
     </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
@@ -200,7 +200,7 @@
       </trans-unit>
       <trans-unit id="accommodationFromItaly" datatype="html">
         <source>From Italy? We can help!</source>
-        <target>From Italy? We can help!</target>
+        <target>Dall&apos; Italia? Possiamo aiutarvi noi!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">104</context>
@@ -208,7 +208,7 @@
       </trans-unit>
       <trans-unit id="nottinghamRoute" datatype="html">
         <source>If you can come on a Wednesday or Sunday...</source>
-        <target>If you can come on a Wednesday or Sunday...</target>
+        <target>Se potete arrivare di Mercoledì o Domenica...</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">109</context>
@@ -232,20 +232,20 @@
         city centre and it will take less then 30 minutes.
       </source>
         <target>
-        The closest airport to Nottingham is East Midlands Airport
-        and you can flight from Pisa on Wednesday and Sunday with Ryanair. The shortest trip
-        would be coming here on the 30th of August and go back home on the 2nd of September.
-        Then you can take a bus from the airport
-        and in 45 minutes you&apos;ll be in the city centre (<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>bus Skylink<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>).
-        There are different options for your ticket like single, double or family,
-        pay attention so you’ll not miss a friendly discount.
-        On average the prices are around £5 pp, if you don&apos;t book it in advance through the Ryanair website
-        <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>be sure to have some change with you.<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
-        <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>If you are looking to share a ride with
-        someone will be favourable to take an <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>Uber<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> or call for a taxi from the airport
-        desk (you&apos;ll see the indication when you land, don&apos;t worry).
-        The prices are around 20/30£ per ride to the
-        city centre and it will take less then 30 minutes.
+        L'areoporto più vicino a Nottingham è East Midlands Airport
+        e ci sono voli da Pisa il Mercoledì e la Domenica con Ryanair. Il periodo più breve in cui poterci raggiungere
+        sarebbe da Domenica 30 Agosto a Mercoledì 2 Settembre.
+        Dall'aeroporto potrete prendere un bus che in
+        45 minuti vi porterà in centro città (<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>bus Skylink<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>).
+        Ci sono prezzi diversi a seconda del biglietto che vorrete acquistare come single, double or family;
+        fate bene attenzione a non farvi sfuggire uno sconto.
+        In media, il prezzo del biglietto è di £5 a persona; se non state pensando di acquistare il biglietto del bus tramite il sito di Ryanair
+        <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>assicuratevi di avere degli spiccioli con voi.<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>
+        <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>Se state pensando di dividere una corsa con qualcuno
+        sarà conveniente prendere un <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>Uber<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> o chiamare un taxi
+        dal desk dell'areoporto (vedrete le indicazioni sul posto una volta atterrati, non vi preoccupate).
+        Il prezzo di un taxi sarà intorno ai 20/30£ per raggiungere il centro
+        e ci vorranno meno di 30 minuti.
       </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
@@ -254,7 +254,7 @@
       </trans-unit>
       <trans-unit id="londonRoute" datatype="html">
         <source>...in alternative you can also visit London</source>
-        <target>...in alternative you can also visit London</target>
+        <target>...altrimenti potreste visitare Londra</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">128</context>
@@ -272,15 +272,15 @@
         the city centre with no fuss. Be sure to carry with you a nice book or music.
       </source>
         <target>
-        You can flight to London almost every day of the week from
-        Pisa/Bologna but you can also look for some direct flight from
-        Florence. Then, you can choose to stay for some days in the
-        Capital and enjoy or go and reach Nottingham. You can take a <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>bus with National Express<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
-        (4 hours ride for £25pp) or a <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>train with Trainline<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> (2 hours
-        ride for £65 pp). Try to book in advance from their website just
-        to be sound and safe. When you grab the bus/train you&apos;ll reach
-        the city centre with no fuss. Be sure to carry with you a nice book or music.
-      </target>
+        Potrete torvare voli su Londra praticamente ogni giorno della settimana
+        da Pisa/Bologna e credo sia possibile trovare anche qualche volo diretto da Firenze.
+        In quel caso, potreste decidere di trascorrere qualche giorno nella
+        capitale e godervi la vacanza o andare direttamente a Nottingham. Per raggiungerci potete o prendere <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/> un bus con National Express<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        (4 ore di corsa per £25 a persona) o <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>un treno con Trainline<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> (2 ore
+        di viaggio per £65 a persona). Cercate di prenotare dal loro sito con un po' di anticipo per essere sicuri di trovare
+        posto. Una volta preso il bus/treno raggiungerete
+        il centro di Nottingham senza troppi problemi. Assicuratevi di avere con voi un buon libro o della musica.
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">129</context>
@@ -298,42 +298,20 @@
     <x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a&gt;"/>hometogo.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.
     <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Some advice: <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>try to book in the city centre (NG1) because if you are getting further then NG3
     you’ll be pretty far from the center and then you’ll need a bus or a cab to reach the main tourist
-    sites. Also the city it’s quite beautiful and I think you don’t want to miss it!! Right in the city
-    center you can find the gorgeous Old Market Square with its Neoclassical Council House, crowned
-    by an imposing dome. 5 minutes away on foot you can reach the stunning Nottingham Castle: you must take
-    a photo in front of the bronze statue of Robin Hood! The Castle affords excellent views of the town, two
-    great museum and 100-meters long cave called Mortimer&apos;s Hole (the extravagant museum guide will show you all the history
-    behind this venue). Not so far there is the popular Galleries of Justice Museum in the city&apos;s
-    former court and jailhouse. And if you want to relax, if you are lucky enough to enjoy a sunny day,
-    you can walk to the Arboretum, home to lovely gardens and some of the city&apos;s most popular festivals!
-    If you are willing to take a bus you have to visit Highfields Park (which is part of the University Campus) and
-    Wollaton Hall (a 200-hectare deer park). Also don&apos;t forget Sherwood Forest! I mean, these are the first things
-    that come to my mind, there is so much more to do. Do you really want to miss a super greasy delicious burger at
-    <x id="START_LINK_3" ctype="x-a" equiv-text="&lt;a&gt;"/>Annie&apos;s Burger Shack<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
-  </source>
+    sites. Also the city it’s quite beautiful and I think you don’t want to miss it!! Here some <x id="START_LINK_3" ctype="x-a" equiv-text="&lt;a&gt;"/>top-rated tourist attractions<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> in Nottingham!<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+    </source>
         <target>
     <x id="HORIZONTAL_RULE" ctype="x-hr" equiv-text="&lt;hr/&gt;"/>
-    In Nottingham you&apos;ll find a lot of places where to stay during your holidays.
-    There are a bunch of hotels in the city centre (<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>booking.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>) with a good price range.
-    For example Jury’s Inn is close to the station and 10 minute walk from the main square;
-    Ibis hotel is right in the city centre, just in front of the tram station... you got the gist of it!!
-    If you are looking for a flat for you and your family in the city you can find some places on
-    websites like <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>Airbnb.it<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/> or <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+    A Nottingham potrete trovare un sacco di sistemazioni che fanno al caso vostro durante le vostre vacanze.
+    Ci sono molti hotel in centro (<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>booking.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>) with a good price range.
+    Per esempio l'hotel Jury’s Inn è vicino alla stazione e a 10 minuti a piedi dalla piazza principale;
+    Ibis hotel invece è situato nel centro, proprio di fronte alla fermata del Tram... insomma, avete capito dove vogliamo andare a parare!!
+    Se cercate un appartamento per voi e la vostra famiglia potrete trovare alloggi in affitto in siti come
+    <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>Airbnb.it<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/> or <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
     <x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a&gt;"/>hometogo.com<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.
-    <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Some advice: <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>try to book in the city centre (NG1) because if you are getting further then NG3
-    you’ll be pretty far from the center and then you’ll need a bus or a cab to reach the main tourist
-    sites. Also the city it’s quite beautiful and I think you don’t want to miss it!! Right in the city
-    center you can find the gorgeous Old Market Square with its Neoclassical Council House, crowned
-    by an imposing dome. 5 minutes away on foot you can reach the stunning Nottingham Castle: you must take
-    a photo in front of the bronze statue of Robin Hood! The Castle affords excellent views of the town, two
-    great museum and 100-meters long cave called Mortimer&apos;s Hole (the extravagant museum guide will show you all the history
-    behind this venue). Not so far there is the popular Galleries of Justice Museum in the city&apos;s
-    former court and jailhouse. And if you want to relax, if you are lucky enough to enjoy a sunny day,
-    you can walk to the Arboretum, home to lovely gardens and some of the city&apos;s most popular festivals!
-    If you are willing to take a bus you have to visit Highfields Park (which is part of the University Campus) and
-    Wollaton Hall (a 200-hectare deer park). Also don&apos;t forget Sherwood Forest! I mean, these are the first things
-    that come to my mind, there is so much more to do. Do you really want to miss a super greasy delicious burger at
-    <x id="START_LINK_3" ctype="x-a" equiv-text="&lt;a&gt;"/>Annie&apos;s Burger Shack<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>?<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+    <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/>Un consiglio: <x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>cercate di alloggiare nel centro città (NG1) o non più lontano di NG3
+    in quel caso potreste trovarvi piuttosto distanti dal centro e dovreste prendere un bus o taxi per raggiungere qualsiasi posto.
+    Inoltre la città è piuttosto bella e non credo proprio vogliate perdervela!! Ecco qui <x id="START_LINK_3" ctype="x-a" equiv-text="&lt;a&gt;"/>le mete più acclamate<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> di Nottingham!    <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
   </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
@@ -355,9 +333,9 @@
       you would contribute to make it an even more unique experience.
     </source>
         <target>
-      We don’t have a proper registry mainly because we don’t have a lot of space and we don’t
-      lack home supplies! If you are willing to gift us anything we’ll let you know that we are planning a crazy honeymoon in Japan. It’s our dream holiday and we’ll be really grateful if
-      you would contribute to make it an even more unique experience.
+      Non abbiamo una vera lista di nozze principalmente perché non abbiamo molto spazio e gli elettrodomestici non ci
+      mancano! Se comunque volete farci un regalo stiamo organizzando una pazza luna di miele in Giappone. È la nostra vacanza dei sogni
+      e vi saremmo molto grati se voleste contribuire a rendere ancora più unica questa esperienza.
     </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
@@ -369,7 +347,7 @@
       We cannot thank you enough!!
     </source>
     <target>
-      We cannot thank you enough!!
+      Non vi potremo ringraziare mai abbastanza!!
     </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
