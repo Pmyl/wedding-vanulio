@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   }
 
   private _startCountdown(): void {
-    this._weddingDate = new Date(2020, 8, 1, 15).getTime();
+    this._weddingDate = Date.UTC(2020, 8, 1, 14).valueOf();
     this._updateCountdown();
 
     setInterval(() => {
@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
   }
 
   private _updateCountdown() {
-    const now: number = new Date().getTime();
+    const now: number = Date.now().valueOf();
     const timeSpan: number = this._weddingDate - now;
 
     this.days = Math.floor(timeSpan / (1000 * 60 * 60 * 24)).toFixed(0);
