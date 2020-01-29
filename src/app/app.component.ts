@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   }
 
   private _startCountdown(): void {
-    this._weddingDate = new Date(2020, 9, 1, 15).getTime();
+    this._weddingDate = new Date(2020, 8, 1, 15).getTime();
     this._updateCountdown();
 
     setInterval(() => {
