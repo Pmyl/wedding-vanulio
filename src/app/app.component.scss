@@ -329,13 +329,16 @@ $textColor: #464646;
         height: 100%;
         width: auto;
         margin: 0 -20px;
+
+        img {
+          height: 200px;
+        }
       }
 
       .accommodation-left-img {
         img {
-          transform: translateX(-50%);
+          transform: translateX(-10%);
         }
-
         overflow-x: hidden;
         flex: 1;
       }
@@ -423,7 +426,7 @@ $textColor: #464646;
           min-width: 210px;
 
           img {
-            transform: translateX(-50%);
+            transform: translateX(-10%);
           }
         }
 
@@ -457,11 +460,20 @@ $textColor: #464646;
   }
 
   .registry {
+    padding: 0 20px;
+
     .registry-header {
       margin: 0;
       text-align: center;
     }
 
-    padding: 0 20px;
+    .registry-description-2 {
+      text-align: center;
+      font-size: 1.3em;
+    }
+
+    .registry-image-container {
+      text-align: center;
+    }
   }
 }
