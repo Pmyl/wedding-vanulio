@@ -10,10 +10,12 @@ process.on('unhandledRejection', error => {
 });
 
 const distPath = path.join(__dirname, '..', 'dist');
+const basePath = path.join(__dirname, '..');
 
 (async function init() {
   await repairBaseHrefOfIndexes();
   await moveLocaleToBasePath('en');
+  await copyRspvFiles();
 })();
 
 async function moveLocaleToBasePath(locale) {
@@ -52,6 +54,33 @@ async function repairBaseHrefOfIndexes() {
       .map(repairBaseHref)
       .map(replaceIndexFile)
   );
+}
+
+async function copyRspvFiles() {
+  const rsvpPath = path.join(basePath, 'rsvp');
+  const itDistPath = path.join(distPath, 'it');
+
+  const enRsvp = new Promise((res, rej) => {
+    ncp(rsvpPath, path.join(distPath, 'rsvp'), function (err) {
+      if (err) {
+        return rej(err);
+      }
+      console.info("RSVP en moved.");
+      res();
+    });
+  });
+
+  const itRsvp = new Promise((res, rej) => {
+    ncp(rsvpPath, path.join(itDistPath, 'rsvp'), function (err) {
+      if (err) {
+        return rej(err);
+      }
+      console.info("RSVP it moved.");
+      res();
+    });
+  });
+
+  return Promise.all([enRsvp, itRsvp]);
 }
 
 function getIndexPaths() {
