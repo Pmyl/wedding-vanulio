@@ -474,6 +474,10 @@ $textColor: #464646;
 
     .registry-image-container {
       text-align: center;
+
+      img {
+        max-width: 100%;
+      }
     }
   }
 }
