@@ -2,6 +2,18 @@
 @import "../src/style/media-query";
 @import "../src/style/utils";
 
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@mixin fade-in($delay: 0s) {
+  animation-fill-mode: both;
+  animation-name: fade-in;
+  animation-duration: 4s;
+  animation-delay: $delay;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -51,88 +63,102 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
 
-.rsvp-card-content {
-  background-color: #EEE;
-  box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.25);
-  width: 80%;
-  padding: 10px;
-  text-align: center;
-  position: relative;
-
-  @include bigger-than-mobile {
-    padding: 40px;
-  }
-
-  @include bigger-than-tablet {
-    padding: 160px 40px 40px;
-  }
-
-  .rsvp-top-right-image,
-  .rsvp-bottom-left-image {
-    position: absolute;
-
-    img {
-      width: 20vw;
-      height: auto;
+  &.data-loaded {
+    .to-show-when-data {
+      @include fade-in;
     }
   }
 
-  .rsvp-top-right-image {
-    top: 0;
-    right: 0;
-  }
-
-  .rsvp-bottom-left-image {
-    bottom: 0;
-    left: 0;
-
-    img {
-      transform: rotate(180deg);
+  &:not(.data-loaded) {
+    .to-show-when-data {
+      opacity: 0;
     }
   }
 
-  .rsvp-rsvp {
-    img {
-      width: 30%;
-      min-width: 200px;
-    }
-  }
-
-  .rsvp-respondez {
-    margin-top: -10px;
-    padding-top: 0;
-    font-size: .9em;
-  }
-
-  .rsvp-email {
-    font-size: 1.1em;
-    font-style: italic;
-    margin: 40px 0 0;
+  .rsvp-card-content {
+    background-color: #EEE;
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.25);
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    position: relative;
 
     @include bigger-than-mobile {
-      font-size: 1.5em;
-    }
-  }
-
-  .rsvp-privately {
-    margin-top: 5px;
-    font-size: .9em;
-  }
-
-  .rsvp-website {
-    margin: 120px 0 10px auto;
-    text-align: right;
-    width: 200px;
-
-    @include bigger-than-mobile {
-      margin: 120px 30px 10px 0;
-      width: auto;
+      padding: 40px;
     }
 
     @include bigger-than-tablet {
-      margin: 180px 120px 10px 0;
+      padding: 160px 40px 40px;
+    }
+
+    .rsvp-top-right-image,
+    .rsvp-bottom-left-image {
+      position: absolute;
+
+      img {
+        width: 20vw;
+        height: auto;
+        @include fade-in(1.5s);
+      }
+    }
+
+    .rsvp-top-right-image {
+      top: 0;
+      right: 0;
+    }
+
+    .rsvp-bottom-left-image {
+      bottom: 0;
+      left: 0;
+
+      img {
+        transform: rotate(180deg);
+      }
+    }
+
+    .rsvp-rsvp {
+      img {
+        @include fade-in;
+        width: 30%;
+        min-width: 200px;
+      }
+    }
+
+    .rsvp-respondez {
+      margin-top: -10px;
+      padding-top: 0;
+      font-size: .9em;
+    }
+
+    .rsvp-email {
+      font-size: 1.1em;
+      font-style: italic;
+      margin: 40px 0 0;
+
+      @include bigger-than-mobile {
+        font-size: 1.5em;
+      }
+    }
+
+    .rsvp-privately {
+      margin-top: 5px;
+      font-size: .9em;
+    }
+
+    .rsvp-website {
+      margin: 120px 0 10px auto;
+      text-align: right;
+      width: 200px;
+
+      @include bigger-than-mobile {
+        margin: 120px 30px 10px 0;
+        width: auto;
+      }
+
+      @include bigger-than-tablet {
+        margin: 180px 120px 10px 0;
+      }
     }
   }
 }
