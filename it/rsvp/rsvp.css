@@ -1,3 +1,11 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
   padding: 0;
   margin: 0;
@@ -48,8 +56,16 @@ html {
   align-items: center;
   justify-content: center;
 }
-
-.rsvp-card-content {
+.rsvp-card.data-loaded .to-show-when-data {
+  animation-fill-mode: both;
+  animation-name: fade-in;
+  animation-duration: 4s;
+  animation-delay: 0s;
+}
+.rsvp-card:not(.data-loaded) .to-show-when-data {
+  opacity: 0;
+}
+.rsvp-card .rsvp-card-content {
   background-color: #EEE;
   box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.25);
   width: 80%;
@@ -58,71 +74,79 @@ html {
   position: relative;
 }
 @media only screen and (min-width: 649px) {
-  .rsvp-card-content {
+  .rsvp-card .rsvp-card-content {
     padding: 40px;
   }
 }
 @media only screen and (min-width: 1199px) {
-  .rsvp-card-content {
+  .rsvp-card .rsvp-card-content {
     padding: 160px 40px 40px;
   }
 }
-.rsvp-card-content .rsvp-top-right-image,
-.rsvp-card-content .rsvp-bottom-left-image {
+.rsvp-card .rsvp-card-content .rsvp-top-right-image,
+.rsvp-card .rsvp-card-content .rsvp-bottom-left-image {
   position: absolute;
 }
-.rsvp-card-content .rsvp-top-right-image img,
-.rsvp-card-content .rsvp-bottom-left-image img {
+.rsvp-card .rsvp-card-content .rsvp-top-right-image img,
+.rsvp-card .rsvp-card-content .rsvp-bottom-left-image img {
   width: 20vw;
   height: auto;
+  animation-fill-mode: both;
+  animation-name: fade-in;
+  animation-duration: 4s;
+  animation-delay: 1.5s;
 }
-.rsvp-card-content .rsvp-top-right-image {
+.rsvp-card .rsvp-card-content .rsvp-top-right-image {
   top: 0;
   right: 0;
 }
-.rsvp-card-content .rsvp-bottom-left-image {
+.rsvp-card .rsvp-card-content .rsvp-bottom-left-image {
   bottom: 0;
   left: 0;
 }
-.rsvp-card-content .rsvp-bottom-left-image img {
+.rsvp-card .rsvp-card-content .rsvp-bottom-left-image img {
   transform: rotate(180deg);
 }
-.rsvp-card-content .rsvp-rsvp img {
+.rsvp-card .rsvp-card-content .rsvp-rsvp img {
+  animation-fill-mode: both;
+  animation-name: fade-in;
+  animation-duration: 4s;
+  animation-delay: 0s;
   width: 30%;
   min-width: 200px;
 }
-.rsvp-card-content .rsvp-respondez {
+.rsvp-card .rsvp-card-content .rsvp-respondez {
   margin-top: -10px;
   padding-top: 0;
   font-size: 0.9em;
 }
-.rsvp-card-content .rsvp-email {
+.rsvp-card .rsvp-card-content .rsvp-email {
   font-size: 1.1em;
   font-style: italic;
   margin: 40px 0 0;
 }
 @media only screen and (min-width: 649px) {
-  .rsvp-card-content .rsvp-email {
+  .rsvp-card .rsvp-card-content .rsvp-email {
     font-size: 1.5em;
   }
 }
-.rsvp-card-content .rsvp-privately {
+.rsvp-card .rsvp-card-content .rsvp-privately {
   margin-top: 5px;
   font-size: 0.9em;
 }
-.rsvp-card-content .rsvp-website {
+.rsvp-card .rsvp-card-content .rsvp-website {
   margin: 120px 0 10px auto;
   text-align: right;
   width: 200px;
 }
 @media only screen and (min-width: 649px) {
-  .rsvp-card-content .rsvp-website {
+  .rsvp-card .rsvp-card-content .rsvp-website {
     margin: 120px 30px 10px 0;
     width: auto;
   }
 }
 @media only screen and (min-width: 1199px) {
-  .rsvp-card-content .rsvp-website {
+  .rsvp-card .rsvp-card-content .rsvp-website {
     margin: 180px 120px 10px 0;
   }
 }

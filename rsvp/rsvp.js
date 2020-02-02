@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
+  const startTime = Date.now();
+
   const language = await fetch('./language/language.json').then((response) => {
     if (response.ok) {
       return response.json();
@@ -9,15 +11,22 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const names = await getNames();
 
+  runAtLeastAfter(startTime, 3000, () => addClass('rsvp-card', 'data-loaded'));
   setText('rsvp-respondez', language.respondez);
   setText('rsvp-time', language.time);
-  setText('rsvp-name', language.name1 + bold(humanize(names, language.and)) + (names.length === 1 ? language.name2 : language.name2_p));
+  setText('rsvp-name', language.name1 + bold(humanize(names, language.and)) + '!' + newLine() +  (names.length === 1 ? language.name2 : language.name2_p));
   setText('rsvp-send', language.send);
   setText('rsvp-privately', language.privately);
   setText('rsvp-website-visit', language.visit);
   setText('rsvp-website-link', language.website);
   setHref('rsvp-website-link', language.link);
 });
+
+function runAtLeastAfter(startTime, delayInMs, toRun) {
+  const timePassed = Date.now() - startTime;
+  const delay = delayInMs - timePassed < 0 ? 0 : delayInMs - timePassed;
+  setTimeout(toRun, delay);
+}
 
 function getNames() {
   const urlParams = new URLSearchParams(window.location.search);
@@ -39,6 +48,10 @@ function getNames() {
   }).then(names => names.map(n => `${n.firstName} ${n.lastName}`));
 }
 
+function addClass(elementClassName, classToAdd) {
+  document.getElementsByClassName(elementClassName)[0].classList.add(classToAdd);
+}
+
 function setText(elementClassName, text) {
   document.getElementsByClassName(elementClassName)[0].innerHTML = text;
 }
@@ -55,4 +68,8 @@ function humanize(names, finalSeparator) {
 
 function bold(content) {
   return `<b>${content}</b>`;
+}
+
+function newLine() {
+  return '<br />';
 }
