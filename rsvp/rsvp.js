@@ -26,8 +26,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const names = await getNames();
 
-    runAtLeastAfter(startTime, 3000, () => addClass('rsvp-card', 'data-loaded'));
     setText('rsvp-name', language.name1 + bold(humanize(names, language.and)) + '!' + newLine() +  (names.length === 1 ? language.name2 : language.name2_p));
+    runAtLeastAfter(startTime, 3000, () => addClass('rsvp-card', 'data-loaded'));
   } catch {
     addClass('rsvp-error-message', 'show');
   }
