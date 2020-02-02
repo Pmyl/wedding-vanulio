@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   setText('rsvp-respondez', language.respondez);
   setText('rsvp-time', language.time);
-  setText('rsvp-name', language.name1 + humanize(names, language.and) + language.name2);
+  setText('rsvp-name', language.name1 + humanize(names, language.and) + (names.length === 1 ? language.name2 : language.name2_p));
   setText('rsvp-send', language.send);
   setText('rsvp-privately', language.privately);
   setText('rsvp-website-visit', language.visit);
