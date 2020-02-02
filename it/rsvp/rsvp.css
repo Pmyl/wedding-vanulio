@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   height: 100%;
+  color: #464646;
 }
 
 html {
@@ -52,12 +53,19 @@ html {
   background-color: #EEE;
   box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.25);
   width: 80%;
-  padding: 40px;
+  padding: 10px;
   text-align: center;
   position: relative;
 }
-.rsvp-card-content .rsvp-rsvp img {
-  width: 30%;
+@media only screen and (min-width: 649px) {
+  .rsvp-card-content {
+    padding: 40px;
+  }
+}
+@media only screen and (min-width: 1199px) {
+  .rsvp-card-content {
+    padding: 160px 40px 40px;
+  }
 }
 .rsvp-card-content .rsvp-top-right-image,
 .rsvp-card-content .rsvp-bottom-left-image {
@@ -76,19 +84,48 @@ html {
   bottom: 0;
   left: 0;
 }
+.rsvp-card-content .rsvp-bottom-left-image img {
+  transform: rotate(180deg);
+}
+.rsvp-card-content .rsvp-rsvp img {
+  width: 30%;
+  min-width: 200px;
+}
+.rsvp-card-content .rsvp-respondez {
+  margin-top: -10px;
+  padding-top: 0;
+  font-size: 0.9em;
+}
 .rsvp-card-content .rsvp-name {
   font-weight: bold;
 }
 .rsvp-card-content .rsvp-email {
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-style: italic;
-  margin: 80px 0 0;
+  margin: 40px 0 0;
+}
+@media only screen and (min-width: 649px) {
+  .rsvp-card-content .rsvp-email {
+    font-size: 1.5em;
+  }
 }
 .rsvp-card-content .rsvp-privately {
   margin-top: 5px;
   font-size: 0.9em;
 }
 .rsvp-card-content .rsvp-website {
-  margin: 80px 120px 10px 0;
+  margin: 120px 0 10px auto;
   text-align: right;
+  width: 200px;
+}
+@media only screen and (min-width: 649px) {
+  .rsvp-card-content .rsvp-website {
+    margin: 120px 30px 10px 0;
+    width: auto;
+  }
+}
+@media only screen and (min-width: 1199px) {
+  .rsvp-card-content .rsvp-website {
+    margin: 180px 120px 10px 0;
+  }
 }

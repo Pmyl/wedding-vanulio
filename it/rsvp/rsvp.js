@@ -3,18 +3,20 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (response.ok) {
       return response.json();
     } else {
-      return fetch('./language/en.json').then(r => r.json());
+      return fetch('./language/it.json').then(r => r.json());
     }
   });
 
   const names = await getNames();
 
+  setText('rsvp-respondez', language.respondez);
   setText('rsvp-time', language.time);
   setText('rsvp-name', language.name1 + humanize(names, language.and) + language.name2);
   setText('rsvp-send', language.send);
   setText('rsvp-privately', language.privately);
   setText('rsvp-website-visit', language.visit);
   setText('rsvp-website-link', language.website);
+  setHref('rsvp-website-link', language.link);
 });
 
 function getNames() {
@@ -39,6 +41,10 @@ function getNames() {
 
 function setText(elementClassName, text) {
   document.getElementsByClassName(elementClassName)[0].innerHTML = text;
+}
+
+function setHref(elementClassName, href) {
+  document.getElementsByClassName(elementClassName)[0].href = href;
 }
 
 function humanize(names, finalSeparator) {
