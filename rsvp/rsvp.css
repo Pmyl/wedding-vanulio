@@ -115,6 +115,15 @@ html {
   width: 30%;
   min-width: 200px;
 }
+.rsvp-card .rsvp-card-content .rsvp-error-message {
+  margin-top: 50px;
+  font-size: 1.2em;
+  color: brown;
+  display: none;
+}
+.rsvp-card .rsvp-card-content .rsvp-error-message.show {
+  display: block;
+}
 .rsvp-card .rsvp-card-content .rsvp-respondez {
   margin-top: -10px;
   padding-top: 0;
