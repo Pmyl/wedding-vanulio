@@ -125,6 +125,17 @@ html {
       }
     }
 
+    .rsvp-error-message {
+      margin-top: 50px;
+      font-size: 1.2em;
+      color: brown;
+      display: none;
+
+      &.show {
+        display: block;
+      }
+    }
+
     .rsvp-respondez {
       margin-top: -10px;
       padding-top: 0;

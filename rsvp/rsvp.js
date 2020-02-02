@@ -1,25 +1,36 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const startTime = Date.now();
 
-  const language = await fetch('./language/language.json').then((response) => {
-    if (response.ok) {
-      return response.json();
-    } else {
-      return fetch('./language/it.json').then(r => r.json());
-    }
-  });
+  try {
+    const language = await fetch('./language/language.json').then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        return fetch('./language/it.json').then(r => {
+          if (r.ok) {
+            return r.json();
+          } else {
+            throw new Error();
+          }
+        });
+      }
+    });
+    setText('rsvp-respondez', language.respondez);
+    setText('rsvp-time', language.time);
+    setText('rsvp-send', language.send);
+    setText('rsvp-privately', language.privately);
+    setText('rsvp-website-visit', language.visit);
+    setText('rsvp-website-link', language.website);
+    setText('rsvp-error-message', language.error);
+    setHref('rsvp-website-link', language.link);
 
-  const names = await getNames();
+    const names = await getNames();
 
-  runAtLeastAfter(startTime, 3000, () => addClass('rsvp-card', 'data-loaded'));
-  setText('rsvp-respondez', language.respondez);
-  setText('rsvp-time', language.time);
-  setText('rsvp-name', language.name1 + bold(humanize(names, language.and)) + '!' + newLine() +  (names.length === 1 ? language.name2 : language.name2_p));
-  setText('rsvp-send', language.send);
-  setText('rsvp-privately', language.privately);
-  setText('rsvp-website-visit', language.visit);
-  setText('rsvp-website-link', language.website);
-  setHref('rsvp-website-link', language.link);
+    runAtLeastAfter(startTime, 3000, () => addClass('rsvp-card', 'data-loaded'));
+    setText('rsvp-name', language.name1 + bold(humanize(names, language.and)) + '!' + newLine() +  (names.length === 1 ? language.name2 : language.name2_p));
+  } catch {
+    addClass('rsvp-error-message', 'show');
+  }
 });
 
 function runAtLeastAfter(startTime, delayInMs, toRun) {
