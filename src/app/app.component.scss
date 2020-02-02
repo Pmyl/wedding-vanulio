@@ -445,10 +445,13 @@
 
   .registry {
     padding: 0 20px;
+    max-width: 800px;
+    margin: 0 auto;
 
     .registry-header {
       margin: 0;
       text-align: center;
+      font-size: 2em;
     }
 
     .registry-description-2 {

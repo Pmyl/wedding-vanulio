@@ -320,7 +320,7 @@
       </trans-unit>
       <trans-unit id="registryTitle" datatype="html">
         <source>Registry</source>
-        <target>Registry</target>
+        <target>Lista di nozze</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.html</context>
           <context context-type="linenumber">168</context>
