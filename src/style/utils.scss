@@ -1,0 +1,3 @@
+@mixin banner-bg {
+  background-image: linear-gradient(to right, $greenColorTransparent, $greenColor, $greenColorTransparent);
+}

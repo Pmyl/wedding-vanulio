@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const ncp = require('ncp').ncp;
 const rimraf = require('rimraf');
+const exec = require('child_process').exec;
 
 ncp.limit = 16;
 
@@ -11,11 +12,12 @@ process.on('unhandledRejection', error => {
 
 const distPath = path.join(__dirname, '..', 'dist');
 const basePath = path.join(__dirname, '..');
+const rsvpPath = path.join(basePath, 'rsvp');
 
 (async function init() {
   await repairBaseHrefOfIndexes();
   await moveLocaleToBasePath('en');
-  await copyRspvFiles();
+  await applyRsvpPage();
 })();
 
 async function moveLocaleToBasePath(locale) {
@@ -56,8 +58,9 @@ async function repairBaseHrefOfIndexes() {
   );
 }
 
-async function copyRspvFiles() {
-  const rsvpPath = path.join(basePath, 'rsvp');
+async function applyRsvpPage() {
+  await compileScss();
+
   const itDistPath = path.join(distPath, 'it');
 
   const enRsvp = new Promise((res, rej) => {
@@ -81,6 +84,16 @@ async function copyRspvFiles() {
   });
 
   return Promise.all([enRsvp, itRsvp]);
+}
+
+async function compileScss() {
+  console.info('Compiling rsvp scss');
+  return new Promise((res) => {
+    console.info('Rsvp scss compiled');
+    exec(`npx sass --no-source-map ${path.join(rsvpPath, 'rsvp.scss')} ${path.join(rsvpPath, 'rsvp.css')}`, () => {
+      res();
+    });
+  });
 }
 
 function getIndexPaths() {

@@ -1,22 +1,6 @@
-$greenColor: #A4D79B;
-$greenColorTransparent: rgb(164, 215, 155, .5);
-$textColor: #464646;
-
-@mixin banner-bg {
-  background-image: linear-gradient(to right, $greenColorTransparent, $greenColor, $greenColorTransparent);
-}
-
-@mixin bigger-than-mobile {
-  @media only screen and (min-width: 649px) {
-    @content;
-  }
-}
-
-@mixin bigger-than-tablet {
-  @media only screen and (min-width: 1199px) {
-    @content;
-  }
-}
+@import "../style/colors";
+@import "../style/media-query";
+@import "../style/utils";
 
 :host {
   display: flex;
