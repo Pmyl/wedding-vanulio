@@ -1,0 +1,18 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-color: #A4D79B;
+  border: none;
+  margin: 0;
+  height: 80px;
+  width: 100%;
+}
+@media only screen and (min-width: 649px) {
+  .header {
+    background-image: linear-gradient(to right, rgba(164, 215, 155, 0.5), #A4D79B, rgba(164, 215, 155, 0.5));
+    background-color: transparent;
+  }
+}
