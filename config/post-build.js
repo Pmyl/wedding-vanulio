@@ -75,7 +75,7 @@ async function applyRsvpPage() {
 }
 
 function copyBaseRsvpFiles(destination, language) {
-  const baseFiles = ['index.html', 'rsvp.js', 'rsvp.css'];
+  const baseFiles = ['index.html', 'rsvp.js', 'rsvp.css', 'favicon.gif'];
   const baseFolders = ['assets'];
 
   return createFolder(destination)
