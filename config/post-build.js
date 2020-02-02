@@ -8,6 +8,7 @@ ncp.limit = 16;
 
 process.on('unhandledRejection', error => {
   console.log('unhandledRejection', error);
+  process.exit(1);
 });
 
 const distPath = path.join(__dirname, '..', 'dist');
@@ -15,8 +16,8 @@ const basePath = path.join(__dirname, '..');
 const rsvpPath = path.join(basePath, 'rsvp');
 
 (async function init() {
-  await repairBaseHrefOfIndexes();
-  await moveLocaleToBasePath('en');
+  // await repairBaseHrefOfIndexes();
+  // await moveLocaleToBasePath('en');
   await applyRsvpPage();
 })();
 
@@ -62,28 +63,55 @@ async function applyRsvpPage() {
   await compileScss();
 
   const itDistPath = path.join(distPath, 'it');
+  const enLanguageFolder = path.join(distPath, 'rsvp', 'language');
+  const itLanguageFolder = path.join(itDistPath, 'rsvp', 'language');
 
-  const enRsvp = new Promise((res, rej) => {
-    ncp(rsvpPath, path.join(distPath, 'rsvp'), function (err) {
+  return copyBaseRsvpFiles(path.join(distPath, 'rsvp'), 'en')
+    .then(() => copyBaseRsvpFiles(path.join(itDistPath, 'rsvp'), 'it'))
+    .then(() => createFolder(enLanguageFolder))
+    .then(() => copy(path.join(rsvpPath, 'language', 'en.json'), path.join(enLanguageFolder, 'language.json'), 'en language moved'))
+    .then(() => createFolder(itLanguageFolder))
+    .then(() => copy(path.join(rsvpPath, 'language', 'it.json'), path.join(itLanguageFolder, 'language.json'), 'it language moved'));
+}
+
+function copyBaseRsvpFiles(destination, language) {
+  const baseFiles = ['index.html', 'rsvp.js', 'rsvp.css'];
+  const baseFolders = ['assets'];
+
+  return createFolder(destination)
+    .then(() => baseFiles.map(name => {
+      return copy(path.join(rsvpPath, name), path.join(destination, name), `RSVP ${name} for ${language} moved`);
+    }))
+    .then(() => baseFolders.map(name => {
+      return createFolder(path.join(destination, name))
+        .then(() => copy(path.join(rsvpPath, name), path.join(destination, name), `RSVP ${name} for ${language} moved`));
+    }));
+}
+
+function createFolder(dir) {
+  console.info('Creating folder', dir);
+
+  return new Promise(res => {
+    if (!fs.existsSync(dir)){
+      fs.mkdirSync(dir);
+    }
+
+    res();
+  });
+}
+
+function copy(from, to, successMessage) {
+  console.info(`Copying from ${from} to ${to}`);
+  return new Promise((res, rej) => {
+    ncp(from, to, function (err) {
       if (err) {
+        console.error(`Error copying from ${from} to ${to}`);
         return rej(err);
       }
-      console.info("RSVP en moved.");
+      console.info(successMessage);
       res();
     });
   });
-
-  const itRsvp = new Promise((res, rej) => {
-    ncp(rsvpPath, path.join(itDistPath, 'rsvp'), function (err) {
-      if (err) {
-        return rej(err);
-      }
-      console.info("RSVP it moved.");
-      res();
-    });
-  });
-
-  return Promise.all([enRsvp, itRsvp]);
 }
 
 async function compileScss() {
