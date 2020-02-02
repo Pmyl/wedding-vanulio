@@ -96,9 +96,6 @@ html {
   padding-top: 0;
   font-size: 0.9em;
 }
-.rsvp-card-content .rsvp-name {
-  font-weight: bold;
-}
 .rsvp-card-content .rsvp-email {
   font-size: 1.1em;
   font-style: italic;
