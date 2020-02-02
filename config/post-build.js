@@ -16,8 +16,8 @@ const basePath = path.join(__dirname, '..');
 const rsvpPath = path.join(basePath, 'rsvp');
 
 (async function init() {
-  // await repairBaseHrefOfIndexes();
-  // await moveLocaleToBasePath('en');
+  await repairBaseHrefOfIndexes();
+  await moveLocaleToBasePath('en');
   await applyRsvpPage();
 })();
 
