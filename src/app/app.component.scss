@@ -19,6 +19,10 @@
         display: none;
       }
 
+      .married-names-img-small {
+        max-width: 212px;
+      }
+
       @include bigger-than-mobile {
         .married-names-img-small {
           display: none;
@@ -26,6 +30,7 @@
 
         .married-names-img {
           display: initial;
+          max-width: 549px;
         }
       }
 
