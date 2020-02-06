@@ -44,7 +44,7 @@ function getNames() {
   const myParam = urlParams.get('w');
   const payload = JSON.stringify({ token: myParam });
 
-  return fetch('https://wedding-vanulio.glitch.me/sendmethedata', {
+  return fetch('https://wedding-vanulio.herokuapp.com/sendmethedata', {
     method: 'POST',
     body: payload,
     headers: {
